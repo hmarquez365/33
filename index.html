@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082b70">
+  <meta name="description" content="Behind every plate, there is a story. Discover the people, places and practices behind durum wheat.">
+  <title>Behind Every Plate — Barilla project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Behind Every Plate home">
+      <span class="brand-mark">B</span><span class="brand-name">BARILLA<small>BEHIND EVERY PLATE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="#farmers" data-i18n="navFarmers">The farmers</a>
+      <a href="#partnership" data-i18n="navPartnership">Working together</a>
+      <a href="#regions" data-i18n="navRegions">Wheat regions</a>
+      <a href="#sustainability" data-i18n="navSustainability">Sustainability</a>
+      <a href="#stories" data-i18n="navStories">Stories</a>
+    </nav>
+    <div class="header-tools">
+      <label class="sr-only" for="languageSelect" data-i18n="languageLabel">Choose language</label>
+      <select id="languageSelect" class="language-select" aria-label="Choose language">
+        <option value="en">EN</option><option value="es">ES</option><option value="it">IT</option>
+      </select>
+      <button class="timer-pill" id="timerOpen" aria-label="Open pasta timer"><span class="timer-dot"></span><span data-i18n="timerNav">Pasta timer</span><b id="miniTime">00:00</b></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-image"></div><div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">FROM THE FIELD TO YOUR TABLE</p>
+        <h1 data-i18n="heroTitle">Behind every plate,<br><em>there is a story.</em></h1>
+        <p class="hero-copy" data-i18n="heroCopy">Pasta begins long before it reaches the pot. It begins with the people who cultivate the wheat, care for the land and keep agricultural knowledge alive.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#farmers" data-i18n="explore">Explore the stories <span>↘</span></a>
+          <button class="text-button" id="heroTimer" data-i18n="startCooking">Start your cooking timer <span>→</span></button>
+        </div>
+      </div>
+      <div class="hero-caption"><span>01 / 05</span><span data-i18n="heroCaption">A story that starts in the soil</span></div>
+    </section>
+
+    <section class="intro section-wrap reveal">
+      <div class="intro-label"><span class="red-line"></span><span data-i18n="introLabel">A DIFFERENT WAY TO WAIT</span></div>
+      <div><h2 data-i18n="introTitle">While the pasta cooks,<br>discover what makes it possible.</h2>
+      <p data-i18n="introCopy">This is a short journey through the agricultural communities, knowledge and choices connected to durum wheat. Take a few minutes to look beyond the package.</p></div>
+      <div class="intro-note"><strong>8–12'</strong><span data-i18n="introNote">A moment to discover<br>the story behind your meal.</span></div>
+    </section>
+
+    <section class="farmers-section section-dark" id="farmers">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><div><p class="eyebrow light" data-i18n="farmEyebrow">01 — THE PEOPLE</p><h2 data-i18n="farmTitle">Every harvest<br>has a human side.</h2></div>
+          <p class="section-lead" data-i18n="farmLead">Behind every field are decisions, skills and years of work. Meet three fictional farmers whose stories represent different perspectives within Italian agriculture.</p></div>
+        <div class="fiction-note"><span>✳</span><span data-i18n="fictionNotice">Educational fiction: these profiles are invented characters, not real interviews or verified Barilla beneficiaries.</span></div>
+        <div class="farmer-grid">
+          <article class="farmer-card reveal">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85" alt="Portrait representing fictional farmer Luca">
+            <div class="farmer-card-content"><span class="card-region">PUGLIA · SOUTHERN ITALY</span><h3>Luca Moretti</h3><p data-i18n="lucaShort">A third-generation farmer balancing family tradition with the need to modernise.</p><button class="arrow-link profile-open" data-profile="luca" data-i18n="readProfile">Read his profile ↗</button></div>
+          </article>
+          <article class="farmer-card reveal">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85" alt="Portrait representing fictional farmer Giulia">
+            <div class="farmer-card-content"><span class="card-region">MARCHE · CENTRAL ITALY</span><h3>Giulia Rossi</h3><p data-i18n="giuliaShort">A young agricultural entrepreneur experimenting with more precise field management.</p><button class="arrow-link profile-open" data-profile="giulia" data-i18n="readProfile">Read her profile ↗</button></div>
+          </article>
+          <article class="farmer-card reveal">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=85" alt="Portrait representing fictional farmer Salvatore">
+            <div class="farmer-card-content"><span class="card-region">SICILY · SOUTHERN ITALY</span><h3>Salvatore Greco</h3><p data-i18n="salvatoreShort">An experienced grower adapting cultivation decisions to increasingly variable seasons.</p><button class="arrow-link profile-open" data-profile="salvatore" data-i18n="readProfile">Read his profile ↗</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="partnership section-wrap" id="partnership">
+      <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="partEyebrow">02 — THE RELATIONSHIP</p><h2 data-i18n="partTitle">Good agriculture<br>needs good partners.</h2></div>
+        <p class="section-lead" data-i18n="partLead">A resilient supply chain is built over time. Clear expectations, knowledge-sharing and appropriate tools can help producers make decisions with a longer horizon.</p></div>
+      <div class="stat-band reveal">
+        <div><strong>2010</strong><span data-i18n="statSince">Barilla Sustainable Farming programme launched</span></div>
+        <div><strong>~7,000</strong><span data-i18n="statFarmers">farmers involved across strategic supply chains in 2025</span></div>
+        <div><strong>816,000 t</strong><span data-i18n="statVolume">cereals and basil sourced through the programme in 2025</span></div>
+        <p class="stat-source" data-i18n="statScope">Group-wide figures for cereals and basil across four supply chains — not durum-wheat-only figures. Source: Barilla 2025 Sustainability Report.</p>
+      </div>
+      <div class="support-grid">
+        <article class="support-item reveal"><span class="support-number">01</span><div><h3 data-i18n="support1Title">Fairer, clearer relationships</h3><p data-i18n="support1Copy">Transparent specifications and dialogue can make expectations clearer for both producers and buyers. The quality and sustainability requirements need to be understood along the chain.</p></div></article>
+        <article class="support-item reveal"><span class="support-number">02</span><div><h3 data-i18n="support2Title">Planning over time</h3><p data-i18n="support2Copy">Cultivation contracts and defined agronomic requirements can support production planning. They do not remove weather, market or crop risks, but can make some decisions more predictable.</p></div></article>
+        <article class="support-item reveal"><span class="support-number">03</span><div><h3 data-i18n="support3Title">Tools and innovation</h3><p data-i18n="support3Copy">Digital agronomic platforms, crop-variety research and field data can help farmers assess conditions and make more informed choices.</p></div></article>
+        <article class="support-item reveal"><span class="support-number">04</span><div><h3 data-i18n="support4Title">Training and expertise</h3><p data-i18n="support4Copy">Technical exchange, research partnerships and practical guidance can strengthen professional skills and support the adoption of improved practices.</p></div></article>
+      </div>
+      <div class="clarification"><strong data-i18n="clarifyTitle">What this does — and does not — mean</strong><p data-i18n="clarifyCopy">These are mechanisms through which agricultural partnerships can create value. Barilla publicly describes cultivation contracts, agronomic specifications, digital support and collaboration with farmers. This page does not claim that every farmer receives direct financing, a guaranteed price or identical contract terms.</p></div>
+    </section>
+
+    <section class="regions-section" id="regions">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><div><p class="eyebrow light" data-i18n="regionEyebrow">03 — THE LAND</p><h2 data-i18n="regionTitle">A country shaped<br>by its fields.</h2></div><p class="section-lead" data-i18n="regionLead">Select a highlighted region to explore the different agricultural contexts in which durum wheat is cultivated. Regional notes are general educational descriptions.</p></div>
+        <div class="map-layout">
+          <div class="map-panel reveal">
+            <svg class="italy-map" viewBox="0 0 440 620" role="img" aria-labelledby="mapTitle mapDesc">
+              <title id="mapTitle">Interactive map of selected Italian regions</title><desc id="mapDesc">Stylised map of Italy with selectable markers for Marche, Campania, Puglia, Basilicata and Sicily.</desc>
+              <path class="italy-shape" d="M157 38 L203 48 230 75 224 105 250 131 255 159 278 184 284 212 307 234 300 256 326 278 331 305 354 327 346 348 368 370 362 392 388 416 381 439 360 451 345 435 327 410 310 389 292 376 281 351 261 335 247 312 230 295 216 270 202 252 186 230 174 204 153 185 145 155 125 134 129 107 147 84 Z"/>
+              <path class="italy-shape island" d="M302 470 L332 464 354 477 357 505 344 529 319 538 298 522 291 496 Z"/>
+              <path class="italy-shape island" d="M86 372 L109 365 127 380 126 403 105 416 85 402 Z"/>
+              <g class="map-point" data-region="marche" tabindex="0" role="button" aria-label="Marche"><circle cx="269" cy="211" r="10"/><text x="287" y="216">01</text></g>
+              <g class="map-point" data-region="campania" tabindex="0" role="button" aria-label="Campania"><circle cx="276" cy="333" r="10"/><text x="294" y="338">02</text></g>
+              <g class="map-point" data-region="basilicata" tabindex="0" role="button" aria-label="Basilicata"><circle cx="314" cy="357" r="10"/><text x="332" y="362">03</text></g>
+              <g class="map-point active" data-region="puglia" tabindex="0" role="button" aria-label="Puglia"><circle cx="344" cy="370" r="10"/><text x="362" y="375">04</text></g>
+              <g class="map-point" data-region="sicily" tabindex="0" role="button" aria-label="Sicily"><circle cx="326" cy="500" r="10"/><text x="344" y="505">05</text></g>
+            </svg>
+            <p class="map-hint" data-i18n="mapHint">Choose a numbered point to explore a region</p>
+          </div>
+          <div class="region-detail reveal" aria-live="polite">
+            <span class="region-kicker" id="regionKicker">04 / SOUTH</span><h3 id="regionName">Puglia</h3><p id="regionDescription">A major agricultural region in southern Italy, with broad plains and a long history of cereal cultivation.</p>
+            <div class="region-facts"><div><small data-i18n="regionClimate">CLIMATE & LAND</small><p id="regionClimate">Mediterranean conditions; hot, dry summers and variable rainfall.</p></div><div><small data-i18n="regionChallenge">LOCAL CHALLENGE</small><p id="regionChallenge">Managing water availability and heat stress during key crop stages.</p></div></div>
+            <div class="region-profile"><span data-i18n="fictionalLink">FICTIONAL FARMER PROFILE</span><b id="regionFarmer">Luca Moretti</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sustainability section-wrap" id="sustainability">
+      <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="susEyebrow">04 — THE FUTURE</p><h2 data-i18n="susTitle">The soil remembers<br>every decision.</h2></div><p class="section-lead" data-i18n="susLead">Sustainable agriculture is not one technique. It is a set of choices adapted to local conditions, aimed at protecting productive land over the long term.</p></div>
+      <div class="sustain-grid">
+        <article class="sustain-card sustain-large reveal"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=85" alt="Agricultural field and landscape"><div class="sustain-overlay"><span>01 / 04</span><h3 data-i18n="sus1Title">Soil health & biodiversity</h3><p data-i18n="sus1Copy">Crop rotation, organic matter and habitat diversity can support soil structure and living ecosystems.</p></div></article>
+        <article class="sustain-card reveal"><div class="sustain-icon">≈</div><span>02 / 04</span><h3 data-i18n="sus2Title">Water stewardship</h3><p data-i18n="sus2Copy">Monitoring, efficient irrigation where used and attention to soil moisture help manage a limited resource.</p></article>
+        <article class="sustain-card reveal"><div class="sustain-icon">↻</div><span>03 / 04</span><h3 data-i18n="sus3Title">Regenerative practices</h3><p data-i18n="sus3Copy">Cover crops, reduced tillage and diversified rotations are examples that may improve soil function when suited to local conditions.</p></article>
+        <article class="sustain-card reveal"><div class="sustain-icon">☼</div><span>04 / 04</span><h3 data-i18n="sus4Title">Climate resilience</h3><p data-i18n="sus4Copy">Locally adapted varieties, weather information and agronomic research can help farms respond to changing conditions.</p></article>
+      </div>
+      <p class="method-note" data-i18n="methodNote">General agricultural practices are explained here for educational purposes. Barilla-specific actions are described only where referenced in the source section below.</p>
+    </section>
+
+    <section class="stories-section section-dark" id="stories">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><div><p class="eyebrow light" data-i18n="storyEyebrow">05 — THE STORIES</p><h2 data-i18n="storyTitle">A harvest is never<br>just a harvest.</h2></div><p class="section-lead" data-i18n="storyLead">Agriculture is shaped by family knowledge, changing conditions and the choices people make for the next season.</p></div>
+        <div class="quote-grid">
+          <blockquote class="quote-card reveal"><span>“</span><p data-i18n="quote1">Tradition gives us a starting point. It cannot be the only plan for the future.</p><cite>— Luca Moretti <small data-i18n="fictionalQuote">Fictional character · Puglia</small></cite></blockquote>
+          <blockquote class="quote-card reveal"><span>“</span><p data-i18n="quote2">Better information does not remove uncertainty, but it helps us make decisions earlier.</p><cite>— Giulia Rossi <small data-i18n="fictionalQuote">Fictional character · Marche</small></cite></blockquote>
+          <blockquote class="quote-card reveal"><span>“</span><p data-i18n="quote3">The next generation needs a farm that can adapt, not simply repeat what came before.</p><cite>— Salvatore Greco <small data-i18n="fictionalQuote">Fictional character · Sicily</small></cite></blockquote>
+        </div>
+        <p class="fiction-note bottom-note"><span>✳</span><span data-i18n="storyFiction">All quotations and biographies on this page are fictional educational content created for this design project.</span></p>
+      </div>
+    </section>
+
+    <section class="closing section-wrap reveal">
+      <p class="eyebrow" data-i18n="closingEyebrow">BACK TO YOUR TABLE</p><h2 data-i18n="closingTitle">Now you know a little more<br>about what’s behind it.</h2>
+      <p data-i18n="closingCopy">The next time you cook pasta, remember the people and landscapes that make the ingredients possible.</p>
+      <button class="button button-blue" id="closingTimer" data-i18n="openTimer">Open cooking timer <span>↗</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">B</span><span class="brand-name">BARILLA<small>BEHIND EVERY PLATE</small></span></a><p data-i18n="footerTag">A student design project exploring the agricultural story behind pasta.</p><nav aria-label="Footer navigation"><a href="#farmers" data-i18n="navFarmers">The farmers</a><a href="#partnership" data-i18n="navPartnership">Working together</a><a href="#sustainability" data-i18n="navSustainability">Sustainability</a></nav></div>
+    <div class="footer-bottom"><p data-i18n="disclaimer">Independent academic project. Not an official Barilla website and not endorsed by Barilla. Farmer profiles and quotations are fictional.</p><details class="sources"><summary data-i18n="sourcesTitle">Sources & verification</summary><ul><li><a href="https://www.barillagroup.com/en/sustainability/" target="_blank" rel="noopener">Barilla Group — Sustainability</a></li><li><a href="https://www.barillagroup.com/media/filer_public/c3/5e/c35e76fb-8f41-4b30-88c2-0a783f233517/barilla_group_sustainabilityreport_2025.pdf" target="_blank" rel="noopener">Barilla Group — 2025 Sustainability Report</a></li><li><a href="https://www.barillagroup.com/en/stories/stories-list/our-sustainability-stories-2025/" target="_blank" rel="noopener">Barilla — Sustainability Stories 2025</a></li><li><a href="https://www.barillagroup.com/en/press-room/position/our-durum-wheat-selection/" target="_blank" rel="noopener">Barilla — Our durum wheat selection</a></li></ul><p data-i18n="verifyNote">Company figures shown here are tied to the cited 2025 reporting period and scope. Re-check official publications before presenting the project publicly.</p></details><span>© <span id="year"></span> · BEHIND EVERY PLATE</span></div>
+  </footer>
+
+  <div class="timer-drawer" id="timerDrawer" aria-hidden="true">
+    <div class="timer-backdrop" id="timerBackdrop"></div><section class="timer-panel" role="dialog" aria-modal="true" aria-labelledby="timerTitle">
+      <button class="close-button" id="timerClose" aria-label="Close timer">×</button>
+      <p class="eyebrow" data-i18n="timerEyebrow">YOUR TIME, WELL SPENT</p><h2 id="timerTitle" data-i18n="timerTitle">Pasta cooking timer</h2>
+      <p class="timer-instruction" data-i18n="timerInstruction">Set the cooking time shown on your pasta pack.</p>
+      <div class="timer-ring" id="timerRing"><svg viewBox="0 0 220 220" aria-hidden="true"><circle class="ring-track" cx="110" cy="110" r="96"/><circle class="ring-progress" id="ringProgress" cx="110" cy="110" r="96"/></svg><div class="timer-readout"><strong id="timerDisplay">08:00</strong><span id="timerStatus" data-i18n="timerReady">READY WHEN YOU ARE</span></div></div>
+      <label class="minutes-label" for="minutesInput" data-i18n="minutesLabel">Cooking time · minutes</label><input id="minutesInput" class="minutes-input" type="number" min="1" max="99" value="8" inputmode="numeric">
+      <div class="timer-controls"><button class="button button-blue" id="startPause" data-i18n="start">Start</button><button class="button button-outline" id="resetTimer" data-i18n="reset">Reset</button></div>
+      <p class="timer-finished" id="timerFinished" hidden data-i18n="finished">Your pasta is ready. Every plate has a story.</p>
+      <p class="timer-footnote" data-i18n="timerFootnote">You can close this panel and keep exploring. The timer will continue running.</p>
+    </section>
+  </div>
+
+  <dialog id="profileDialog" class="profile-dialog"><button class="close-button dialog-close" id="profileClose" aria-label="Close profile">×</button><div id="profileContent"></div></dialog>
+  <script src="js/script.js"></script>
+</body>
+</html>
